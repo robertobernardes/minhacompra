@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: minhacompra
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: robertobernardes
+Implementation-Vendor-Id: com.nelioalves.minhacompra
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/minhacompra
+Created-By: Maven Integration for Eclipse
+
