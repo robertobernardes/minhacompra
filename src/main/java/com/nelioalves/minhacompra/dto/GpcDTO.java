@@ -2,8 +2,9 @@ package com.nelioalves.minhacompra.dto;
 
 import java.io.Serializable;
 
-import org.hibernate.validator.constraints.Length;
 import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
 
 import com.nelioalves.minhacompra.domain.Gpc;
 
@@ -16,8 +17,13 @@ public class GpcDTO implements Serializable {
 	@Length(min=1, max=200, message="O tamanho deve ser entre 1 e 200 caracteres")
 	private String nome;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private Long codigo;
+	
+	@Length(max=200, message="O tamanho deve ser no maximo 200 caracteres")
 	private String link;
+	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private boolean st_ativo;
 	
 	public GpcDTO() {		
@@ -69,7 +75,5 @@ public class GpcDTO implements Serializable {
 
 	public void setSt_ativo(boolean st_ativo) {
 		this.st_ativo = st_ativo;
-	}
-	
-	
+	}	
 }
